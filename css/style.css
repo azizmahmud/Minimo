@@ -99,7 +99,7 @@ body{
 
 
 .hero-section .article {
-    margin: 100px 80px;
+    margin: 100px 80px 35px 80px;
 }
 
 .subtitle{
@@ -132,14 +132,18 @@ body{
 
 /* Featured Start  */
 .featured-section{
-    padding-bottom: 100px;
     overflow: hidden;
 }
 
 .artical-wrap{
     width: 47%;
+    float: left;
+    margin-top: 65px;
 }
 
+.artical-wrap:nth-child(even) {
+    margin-left: 6%;
+}
 .artical-wrap img{
     width: 100%;
     margin-bottom: 30px;
@@ -158,7 +162,7 @@ body{
 .newsletter {
 	padding: 100px 0 ;
 	background-color: #f0f0f0;
-	margin-bottom: 100px;
+	margin-bottom: 35px;
     overflow: hidden;
 }
 
@@ -241,6 +245,11 @@ body{
     padding: 20px 35px;
     display: inline-block;
     border: 1px solid #626262;
+    transition: all 0.33s linear;
+}
+.load-more-btn:hover{
+    background-color:#626262 ;
+	color: white;
 }
 
 /* Blog End */
